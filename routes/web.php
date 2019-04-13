@@ -13,4 +13,7 @@
 Route::get('/', 'PageController@index');
 Route::get('about-us', 'PageController@about');
 Route::get('contact-us', 'PageController@contact');
+Route::get('/datatables', function () {
+    return view('datatables');
+});
 

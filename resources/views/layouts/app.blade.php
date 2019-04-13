@@ -73,6 +73,7 @@
     <div class="container">
 
     @yield('content')
+    @include('_nav')
 
     </div> <!-- /container -->
 
