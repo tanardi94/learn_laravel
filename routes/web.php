@@ -16,4 +16,6 @@ Route::get('contact-us', 'PageController@contact');
 Route::get('/datatables', function () {
     return view('datatables');
 });
+Route::resource('datatables/user', 'UserController');
+Route::get('datatables/table/user', 'UserController@dataTable')->name('table.user');
 
