@@ -16,7 +16,7 @@
     <h1>Here are the list of my hobbies :</h1>
     <ul style="list-style-type: none; padding: 0;margin-bottom: 30px;">
         @foreach ($hobbies as $hobby)
-            <li>{{$hobby->hobby}} for {{$hobby->duration}} hours</li>
+            <li>{{$hobby->title}}, which is {{$hobby->description}} for now for {{$hobby->duration}} hours</li>
         @endforeach
     </ul>
 </div>
